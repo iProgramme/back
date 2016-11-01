@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <title>后勤投诉管理系统</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #fff;">
+	<div class="header">
+		<div class="wid1400 clear">
+			<div class="heaer_img fl"><img src="img/logo.png"><p class="fl">后勤投诉管理系统</p></div>
+			<div class="header_per fr">
+				<p class="fl">Hi,后勤管理员</p>
+				<a href="javascript:void(0)" class="head_img fl">
+					<img src="img/touxiang.png">
+					<span class="arrow"></span>
+				</a>
+				<div class="square disN">
+					<a href="javascript:void(0)">修改密码</a>
+					<a href="javascript:void(0)">退出</a>
+				</div>
+				<p class="fr">登陆时间2016-10-31 11:55</p>
+			</div>
+		</div>
+	</div>
+	<!-- 主题内容 -->
+	<div class="wid1400 main clear">
+		<div class="nav fl">
+			<ul>
+				<li class="nav1">
+					<a href="javascript:void(0)" class="nav1all nav11">投诉表单</a>
+					<ul class="navul1 disN">
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+					</ul>
+				</li>
+				<li class="nav1">
+					<a href="javascript:void(0)" class="nav1all nav12">受理历史</a>
+					<ul class="navul1 disN">
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="javascript:void(0)">二级标题</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="frame fl">
+			<iframe src="html/main_index1_info.html" scrolling="no" class="rightIframe"></iframe>
+		</div>
+	</div>
+	<!-- 主题内容 -->
+	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
+	<script type="text/javascript">
+		// 鼠标滑过个人信息
+		$(".head_img,.square").hover(function () {
+			$(".square").show()
+		},function () {
+			$(".square").hide()
+		})
+		// 鼠标滑过一级菜单
+		$(".nav1all").hover(function () {
+			$(this).next("ul").show();
+			$(this).parents("li").addClass('bgc745e93')
+		},function () {
+			$(".nav1").removeClass('bgc745e93');
+			$(".nav1 ul").hide();
+		})
+		$(".navul1").hover(function() {
+			$(this).parents("li").addClass('bgc745e93');
+			$(this).show();
+		}, function() {
+			$(this).parents("li").removeClass('bgc745e93');
+			$(".navul1").hide()
+		});
+	</script>
+</body>
+
+</html>
