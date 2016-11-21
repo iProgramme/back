@@ -79,6 +79,13 @@
             </div>
         </div>
         <!-- 输入框 -->
+        <!-- 受理导出 -->
+        <div class="attend mt20">
+            <a href="javascript:void(0)" class="attend1 attend_active">全部</a>
+            <a href="javascript:void(0)" class="attend2">已受理</a>
+            <a href="javascript:void(0)" class="attend3">未受理</a>
+        </div>
+        <!-- 受理导出 -->
         <!-- 表格 -->
         <div class="common_table">
             <table>
@@ -314,7 +321,12 @@
         elem: '#J-xl'
     });
     </script>
-    
+    <script type="text/javascript">
+        $(".attend a").click(function () {
+            $(".attend a").removeClass("attend_active");
+            $(this).addClass("attend_active");
+        })
+    </script>
 
 </body>
 

@@ -18,7 +18,7 @@
         <div class="bread">
             <ul>
                 <li class="bread_first">当前位置</li>
-                <li>受理历史</li>
+                <li>类别管理</li>
             </ul>
         </div>
         <!-- 面包屑 -->
@@ -45,8 +45,6 @@
             <div class="push">
                 <a href="javascript:void(0)" class="push_type">新增类型</a>
                 <a href="javascript:void(0)" class="push_project">新增项目</a>
-                <a href="javascript:void(0)" class="push_edit">编辑</a>
-                <a href="javascript:void(0)" class="push_delect">删除</a>
             </div>
             <table class="td0_tr1">
                 <tr>
@@ -54,66 +52,77 @@
                     <th>投诉类型</th>
                     <th>投诉项目</th>
                     <th>创建时间</th>
+                    <th>编辑</th>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>123</td>
                     <td>奥特曼</td>
+                    <td>2016-11-10 11:13:56</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>123</td>
+                    <td>2016-11-10 11:13:56</td>
                     <td>东区</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2016-11-10 11:13:56</td>
+                    <td>123</td>
+                    <td>奥特曼</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>123</td>
-                    <td>东区</td>
-                    <td>宿舍管理投诉</td>
+                    <td>2016-11-10 11:13:56</td>
+                    <td>奥特曼</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
                 </tr>
                 <tr>
+                    <td>1</td>
+                    <td>2016-11-10 11:13:56</td>
+                    <td>123</td>
+                    <td>奥特曼</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2016-11-10 11:13:56</td>
+                    <td>123</td>
+                    <td>奥特曼</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
+                </tr>
+                <tr>
+                    <td>2016-11-10 11:13:56</td>
                     <td>1</td>
                     <td>123</td>
                     <td>奥特曼</td>
-                    <td>东区</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>123</td>
+                    <td>2016-11-10 11:13:56</td>
                     <td>奥特曼</td>
-                    <td>宿舍管理投诉</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>123</td>
+                    <td>2016-11-10 11:13:56</td>
                     <td>奥特曼</td>
-                    <td>宿舍管理投诉</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
                 </tr>
                 <tr>
                     <td>1</td>
                     <td>123</td>
+                    <td>2016-11-10 11:13:56</td>
                     <td>奥特曼</td>
-                    <td>东区</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>123</td>
-                    <td>奥特曼</td>
-                    <td>东区</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>123</td>
-                    <td>奥特曼</td>
-                    <td>东区</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>123</td>
-                    <td>奥特曼</td>
-                    <td>东区</td>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>123</td>
-                    <td>奥特曼</td>
-                    <td>东区</td>
+                    <td><a href="javascript:void(0)" class="edit_btn">编辑</a> | <a href="javascript:void(0)" class="del_btn">删除</a></td>
                 </tr>
                 
             </table>
@@ -214,25 +223,26 @@
     <!-- 删除 -->
     <!-- 弹窗 -->
     <script src="../js/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript">
-    </script>
-    <!-- 日期 -->
-    <script type="text/javascript" src="../js/laydate.dev.js"></script>
-    <!-- 日期 -->
-    <!-- 日期 -->
-    <script type="text/javascript">
-    laydate({
-        elem: '#J-xl'
-    });
-    </script>
+    
     <script type="text/javascript">
     // 弹窗
-    $(".push a").click(function() {
-        var num=$(this).index();
+    $(".push_type").click(function() {
         $(".answer_open").hide();
-        $(".answer_open").eq(num).show()
+        $(".answer_open").eq(0).show()
     })
-    $(".close").click(function() {
+    $(".push_project").click(function() {
+        $(".answer_open").hide();
+        $(".answer_open").eq(1).show()
+    })
+    $(".edit_btn").click(function() {
+        $(".answer_open").hide();
+        $(".answer_open").eq(2).show()
+    })
+    $(".del_btn").click(function() {
+        $(".answer_open").hide();
+        $(".answer_open").eq(3).show()
+    })
+    $(".close,.cancle2").click(function() {
         $(".answer_open").hide()
     })
     </script>

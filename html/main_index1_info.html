@@ -99,8 +99,8 @@
                     <p class="infortion_p">投诉照片</p>
                     <div class="infop">
                         <div class="infop_img">
-                            <img src="../img/suiyi1.jpg">
-                            <img src="../img/suiyi1.jpg">
+                            <img src="../img/92e8647ajw1f7v9vy3xrxg20a605q4qq.gif">
+                            <img src="../img/92e8647ajw1f7v9vy3xrxg20a605q4qq.gif">
                         </div>
                     </div>
                 </div>
@@ -116,10 +116,35 @@
                 <a href="javascript:void(0)" class="edit">编辑</a>
             </div>
         </div>
+        <!-- 右下角弹窗 -->
+        <div class="info_open">
+            <p class="win_title">您有新的消息<a href="javascript:void(0)"></a></p>
+            <div class="info_content"><a href="javascript:void(0)">未受理投诉表单(10)</a></div>
+        </div>
+        <!-- 右下角弹窗 -->
     </div>
-    
+
     <script src="../js/jquery-1.8.1.min.js"></script>
-    
+    <script type="text/javascript">
+        // 关闭右下角
+        $(".win_title a").click(function () {
+            $(".info_open").hide()
+        })
+        // 编辑
+        $(".edit").click(function () {
+            var text=$(".infortion5 .infop p").text();
+            $(".infortion5 .infop p").remove();
+            $(".infortion5 .infop").prepend('<textarea>' + text + '</textarea>')
+        })
+        // 查看原图
+        $(".infop_img img").click(function () {
+            if ($(this).height()==100) {
+                $(this).css('height', 'auto');
+            }else{
+                $(this).css('height', '100px');
+            }
+        })
+    </script>
 
 </body>
 

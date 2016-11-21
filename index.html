@@ -21,10 +21,10 @@
 					<span class="arrow"></span>
 				</a>
 				<div class="square disN">
-					<a href="javascript:void(0)">修改密码</a>
-					<a href="javascript:void(0)">退出</a>
+					<a href="javascript:void(0)" >修改密码</a>
+					<a href="javascript:void(0)" >退出</a>
 				</div>
-				<p class="fr">登陆时间2016-10-31 11:55</p>
+				<p class="fr">登陆时间：2016年11月10日&nbsp;&nbsp;09:52</p>
 			</div>
 		</div>
 	</div>
@@ -55,23 +55,50 @@
 					</ul>
 				</li>
 				<li class="nav1">
-					<a href="html/main_index3.html" class="nav1all nav13" target="FrameName">投诉类别管理</a>
+					<a href="html/main_index3.html" class="nav1all nav13" target="FrameName">类别管理</a>
 					<ul class="navul1 disN">
-						<li><a href="javascript:void(0)">二级标题</a></li>
-						<li><a href="javascript:void(0)">二级标题</a></li>
-						<li><a href="javascript:void(0)">二级标题</a></li>
-						<li><a href="javascript:void(0)">二级标题</a></li>
-						<li><a href="javascript:void(0)">二级标题</a></li>
-						<li><a href="javascript:void(0)">二级标题</a></li>
+						<li><a href="html/main_index31.html" target="FrameName">区域类型</a></li>
+						<li><a href="html/main_index32.html" target="FrameName">投诉类型</a></li>
+						<li><a href="html/main_index33.html" target="FrameName">投诉事项</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 		<div class="frame fl">
-			<iframe src="html/main_index3.html" scrolling="no" class="rightIframe" name="FrameName"></iframe>
+			<iframe src="html/main_index1_info.html" scrolling="no" class="rightIframe" name="FrameName"></iframe>
 		</div>
 	</div>
 	<!-- 主题内容 -->
+	<!-- 修改密码 -->
+	<div class="answer_open answer_open_index disN">
+	    <div class="change_pw">
+	    	<p>请输入您的新密码<a href="javascript:void(0)" class="close"></a></p>
+	    	<div class="new_pw">
+	    		<span>新密码：</span>
+	    		<input type="text" name="">
+	    		<i>请输入6-16个字符</i>
+	    	</div>
+	    	<div class="new_pw">
+	    		<span>确认密码：</span>
+	    		<input type="text" name="">
+	    		<i>请确认您的密码</i>
+	    	</div>
+	    	<a href="javascript:void(0)" class="done">完成</a>
+	    </div>
+	</div>
+	<!-- 修改密码 -->
+	<!-- 退出登录 -->
+	<div class="answer_open disN answer_open_index2">
+	    <div class="open_delect">
+	        <img src="img/delect.png">
+	        <span>确定退出？</span>
+	    </div>
+	    <div class="anw_btn">
+	        <a href="javascript:void(0)" class="cancle2">取消</a>
+	        <a href="javascript:void(0)" class="sure2">确定</a>
+	    </div>
+	</div>
+	<!-- 退出登录 -->
 	<script type="text/javascript" src="js/jquery-1.8.1.min.js"></script>
 	<script type="text/javascript">
 		// 鼠标滑过个人信息
@@ -95,6 +122,16 @@
 			$(this).parents("li").removeClass('bgc745e93');
 			$(".navul1").hide()
 		});
+		// 打开修改密码和退出登录
+		$(".square a").click(function () {
+			var num=$(this).index();
+			$(".answer_open").hide();
+			$(".answer_open").eq(num).show()
+		})
+		// 关闭修改密码和退出登录
+		$(".sure2,.cancle2,.done,.close").click(function () {
+			$(".answer_open").hide()
+		})
 	</script>
 </body>
 
